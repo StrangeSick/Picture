@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Picture</title>
+
+        <style>
+            * {
+                padding: 0;
+                margin: 0;
+                outline: 0;
+                border: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                width: 100%;
+                height: 100vh;
+            }
+
+            section {
+                display: inline-flex;
+                position: fixed;
+                right: 0;
+                padding: 30px 40px;
+            }
+
+            section p {
+                display: none;
+                font-size: 2em;
+                text-transform: capitalize;
+                font-family: sans-serif;
+                color: white;
+                background-color: #00000060;
+                padding: 10px;
+                border-radius: 15px;
+                animation: p 1s infinite alternate-reverse ease-in-out;
+                animation-delay: 2s;
+            }
+
+            section p:hover {
+                animation: none;
+            }
+
+            picture {
+                display: block;
+                width: 100%;
+                height: 100vh;
+                
+            }
+
+            picture img, picture source {
+                width: 100%;
+                height: 100vh;
+            }
+
+            /* Animações de texto */
+            @keyframes p {
+                from {
+                    opacity: 0;
+                    background-color: white;
+                    color: black;
+                }
+            }
+
+            /* Dimensões textos */
+            @media screen
+                and (max-width: 280px) {
+                    .p1 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 281px) and (max-width: 400px) {
+                    .p2 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 401px) and (max-width: 600px) {
+                    .p3 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 601px) and (max-width: 800px) {
+                    .p4 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 801px) and (max-width: 1024px) {
+                    .p5 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1025px) and (max-width: 1280px) {
+                    .p6 {
+                        display: inline-block;
+                    }
+
+                    section {
+                        padding: 10px;
+                        bottom: 0;
+                    }
+
+                    body {
+                        text-align: center;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1281px) and (max-width: 1366px) {
+                    .p7 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1367px) and (max-width: 1500px) {
+                    .p8 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1501px) and (max-width: 1700px) {
+                    .p9 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1701px) and (max-width: 1920px) {
+                    .p10 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 1921px) and (max-width: 2300px) {
+                    .p11 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 2301px) and (max-width: 2500px) {
+                    .p12 {
+                        display: inline-block;
+                    }
+            }
+            
+            @media screen
+                and (min-width: 2501px) and (max-width: 2700px) {
+                    .p13 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 2701px) and (max-width: 3000px) {
+                    .p14 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 3001px) and (max-width: 3300px) {
+                    .p15 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 3301px) and (max-width: 3500px) {
+                    .p16 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 3501px) and (max-width: 3700px) {
+                    .p17 {
+                        display: inline-block;
+                    }
+            }
+
+            @media screen
+                and (min-width: 3701px) {
+                    .p18 {
+                        display: inline-block;
+                    }
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <section>
+            <p class="p1">Dimensão - 280x672<br>Nível da largura - 280px</p>
+            <p class="p2">Dimensão - 512x542<br>Nível da largura - 281 - 400px</p>
+            <p class="p3">Dimensão - 600x647<br>Nível da largura - 401 - 600px</p>
+            <p class="p4">Dimensão - 800x647<br>Nível da largura - 601 - 800px</p>
+            <p class="p5">Dimensão - 1024x647<br>Nível da largura - 801 - 1024px</p>
+            <p class="p6">Dimensão - 1280x720<br>Nível da largura - 1025 - 1280px</p>
+            <p class="p7">Dimensão - 1366x768<br>Nível da largura - 1281 - 1366px</p>
+            <p class="p8">Dimensão - 1500x844<br>Nível da largura - 1367 - 1500px</p>
+            <p class="p9">Dimensão - 1700x956<br>Nível da largura - 1501 - 1700px</p>
+            <p class="p10">Dimensão - 1920x1080<br>Nível da largura - 1701 - 1920px</p>
+            <p class="p11">Dimensão - 2300x1294<br>Nível da largura - 1921 - 2300px</p>
+            <p class="p12">Dimensão - 2500x1406<br>Nível da largura - 2301 - 2500px</p>
+            <p class="p13">Dimensão - 2674x1501<br>Nível da largura - 2501 - 2700px</p>
+            <p class="p14">Dimensão - 2636x1688<br>Nível da largura - 2701 - 3000px</p>
+            <p class="p15">Dimensão - 2892x1856<br>Nível da largura - 3001 - 3300px</p>
+            <p class="p16">Dimensão - 3084x1932<br>Nível da largura - 3301 - 3500px</p>
+            <p class="p17">Dimensão - 3700x2622<br>Nível da largura - 3501 - 3700px</p>
+            <p class="p18">Dimensão - 3840x2160<br>Nível da largura - 3701 - 3840px</p>
+        </section>
+
+        <picture>
+            <source srcset="imagens/Max_butterfly.png" media="(max-width: 280px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-06.png" media="(max-width: 400px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-05.png" media="(max-width: 600px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-04.png" media="(max-width: 800px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-03.png" media="(max-width: 1024px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-02.png" media="(max-width: 1280px)">
+            <source srcset="imagens/img-Life-is-Strange-steam-Cards-01.png" media="(max-width: 1366px)">
+            <source srcset="imagens/LIS-Midia-01.png" media="(max-width: 1500px)">
+            <source srcset="imagens/Chloe_bg-verde.png" media="(max-width: 1700px)">
+            <source srcset="imagens/Max_bg-violao.png" media="(max-width: 1920px)">
+            <source srcset="imagens/LIS_trem.png" media="(max-width: 2300px)">
+            <source srcset="imagens/Chloe_rachel-trem.png" media="(max-width: 2500px)">
+            <source srcset="imagens/Storm.png" media="(max-width: 2700px)">
+            <source srcset="imagens/Chloe_asas.png" media="(max-width: 3000px)">
+            <source srcset="imagens/Arcadia_bay.png" media="(max-width: 3300px)">
+            <source srcset="imagens/Max_nulo.png" media="(max-width: 3500px)">
+            <source srcset="imagens/LIS_2.png" media="(max-width: 3700px)">
+            <img src="imagens/Life-is-Strange-HD-Wallpaper.png" alt="LIS_1" >            
+        </picture>
+    </body>
+</html>
